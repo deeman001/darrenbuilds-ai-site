@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  background: #080808;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  background: #080808;
+  color: #e8e8e8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #333;
+  color: #f0f0f0;
+}
