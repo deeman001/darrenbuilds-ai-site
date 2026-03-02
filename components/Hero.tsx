@@ -3,14 +3,20 @@ import { Container } from "./Container";
 
 export function Hero() {
   return (
-    <section className="pt-16">
+    <section className="pt-16" aria-labelledby="hero-title" aria-describedby="hero-summary">
       <Container>
         <div className="grid items-end gap-10 md:grid-cols-2 md:gap-16">
           <div className="order-2 pb-10 md:order-1 md:pb-20">
-            <h1 className="font-[var(--font-dm-serif)] text-[clamp(3.5rem,5.5vw,5rem)] leading-none text-[#f0f0f0]">
+            <h1
+              id="hero-title"
+              className="font-[var(--font-dm-serif)] text-[clamp(3.5rem,5.5vw,5rem)] leading-none text-[#f0f0f0]"
+            >
               Darren Builds
             </h1>
-            <p className="mt-6 max-w-[42ch] font-[var(--font-inter)] text-[1.05rem] font-light leading-[1.7] text-[#777777]">
+            <p
+              id="hero-summary"
+              className="mt-6 max-w-[42ch] font-[var(--font-inter)] text-[1.05rem] font-light leading-[1.7] text-[#777777]"
+            >
               I build businesses and software. From brick and mortar to AI-powered systems.
             </p>
             <div className="mt-10 flex items-center gap-6 font-[var(--font-inter)] text-sm">
@@ -42,7 +48,7 @@ export function Hero() {
             >
               <Image
                 src="/images/darren-hero.jpg"
-                alt="Black and white portrait of Darren"
+                alt="Black and white portrait of Darren Peterson"
                 fill
                 priority
                 sizes="(max-width: 800px) 100vw, 50vw"

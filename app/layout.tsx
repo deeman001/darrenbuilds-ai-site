@@ -1,31 +1,59 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 
-const dmSerif = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-dm-serif",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
-  title: "Darren Builds",
+  metadataBase: new URL("https://darrenbuilds.ai"),
+  title: {
+    default: "Darren Peterson | Darren Builds — Business + Software Builder",
+    template: "%s | Darren Builds",
+  },
   description:
-    "Builder of businesses and software. From brick and mortar to AI-powered systems.",
+    "Darren Peterson builds businesses and software systems — from brick-and-mortar operations to AI-powered platforms. Founder, operator, and product builder.",
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "Darren Peterson",
+    "Darren Builds",
+    "business builder",
+    "software builder",
+    "AI systems",
+    "product founder",
+    "entrepreneur",
+    "brand builder",
+    "operator",
+    "Forthean Labs",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
-    title: "Darren Builds",
-    description: "Builder of businesses and software.",
-    url: "https://darrenbuilds.ai",
+    title: "Darren Peterson | Darren Builds",
+    description:
+      "Builder of businesses and software. From brick-and-mortar operations to AI-powered systems.",
+    url: "https://darrenbuilds.ai/",
     siteName: "Darren Builds",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/darren-hero.jpg",
+        alt: "Darren Peterson, founder of Darren Builds",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Darren Builds",
+    title: "Darren Peterson | Darren Builds",
+    description:
+      "Builder of businesses and software. From brick-and-mortar operations to AI-powered systems.",
+    images: ["/images/darren-hero.jpg"],
+    creator: "@Darren_Builds",
   },
 };
 
@@ -35,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSerif.variable} ${inter.variable}`}>
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

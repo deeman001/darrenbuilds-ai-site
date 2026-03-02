@@ -30,13 +30,16 @@ const badgeStyles: Record<string, string> = {
 
 export function Projects() {
   return (
-    <section id="build" className="border-t border-[#1c1c1c] py-20">
+    <section id="build" className="border-t border-[#1c1c1c] py-20" aria-labelledby="build-title">
       <Container>
         <p className="font-[var(--font-inter)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-[#444444]">
           What I&apos;m Building Now
         </p>
         <div className="mt-4 flex items-end justify-between gap-4">
-          <h2 className="font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]">
+          <h2
+            id="build-title"
+            className="font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]"
+          >
             What I&apos;m Building Now
           </h2>
           <a

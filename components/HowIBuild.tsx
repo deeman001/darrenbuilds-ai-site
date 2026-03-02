@@ -9,12 +9,15 @@ const principles = [
 
 export function HowIBuild() {
   return (
-    <section id="principles" className="border-t border-[#1c1c1c] py-20">
+    <section id="principles" className="border-t border-[#1c1c1c] py-20" aria-labelledby="principles-title">
       <Container>
         <p className="font-[var(--font-inter)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-[#444444]">
           How I Build
         </p>
-        <h2 className="mt-4 font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]">
+        <h2
+          id="principles-title"
+          className="mt-4 font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]"
+        >
           How I Build
         </h2>
 

@@ -2,12 +2,15 @@ import { Container } from "./Container";
 
 export function BuilderArc() {
   return (
-    <section id="arc" className="border-t border-[#1c1c1c] py-20">
+    <section id="arc" className="border-t border-[#1c1c1c] py-20" aria-labelledby="arc-title">
       <Container>
         <p className="font-[var(--font-inter)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-[#444444]">
           The Builder Arc
         </p>
-        <h2 className="mt-4 font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]">
+        <h2
+          id="arc-title"
+          className="mt-4 font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]"
+        >
           The Builder Arc
         </h2>
         <div className="mt-8 max-w-[70ch] space-y-7 font-[var(--font-inter)] text-[1.05rem] font-light leading-[1.85] text-[#888888]">
