@@ -35,9 +35,19 @@ export function Projects() {
         <p className="font-[var(--font-inter)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-[#444444]">
           What I&apos;m Building Now
         </p>
-        <h2 className="mt-4 font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]">
-          What I&apos;m Building Now
-        </h2>
+        <div className="mt-4 flex items-end justify-between gap-4">
+          <h2 className="font-[var(--font-dm-serif)] text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.15] text-[#f0f0f0]">
+            What I&apos;m Building Now
+          </h2>
+          <a
+            href="https://fortheanlabs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pb-1 font-[var(--font-inter)] text-[0.72rem] tracking-[0.08em] uppercase text-[#555555] hover:text-[#bdbdbd]"
+          >
+            More at fortheanlabs.com
+          </a>
+        </div>
 
         <div className="mt-8 grid border border-[#1c1c1c] md:grid-cols-2">
           {projects.map((project, i) => (
