@@ -4,14 +4,7 @@ export function Footer() {
   return (
     <footer className="border-t border-[#1c1c1c] py-12">
       <Container>
-        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-          <a
-            href="mailto:hello@darrenbuilds.ai"
-            className="border-b border-[#333] pb-1 font-[var(--font-inter)] text-[0.82rem] text-[#e8e8e8] hover:text-[#f0f0f0]"
-          >
-            hello@darrenbuilds.ai
-          </a>
-
+        <div className="flex justify-end">
           <div className="flex items-center gap-4 font-[var(--font-inter)] text-[0.82rem] text-[#555555]">
             <a href="https://x.com/Darren_Builds" target="_blank" rel="noopener noreferrer" className="hover:text-[#e8e8e8]">X</a>
             <span>·</span>
