@@ -1,17 +1,31 @@
 import { Container } from "./Container";
 
 const projects = [
-  { name: "PaletteCheck", desc: "AI powered brand compliance.", status: "Live" },
-  { name: "PolicyPhile", desc: "AI policy Q&A for teams.", status: "Beta" },
-  { name: "Social API", desc: "API driven distribution infrastructure.", status: "Building" },
-  { name: "Experiments", desc: "Always something in progress.", status: "Always" },
+  {
+    name: "PolicyPhile",
+    desc: "Instant, cited answers to handbook and HR policy questions.",
+    status: "Early Access",
+  },
+  {
+    name: "PaletteCheck",
+    desc: "AI brand compliance checks for text and visual assets before publishing.",
+    status: "Early Access",
+  },
+  {
+    name: "VoxBurst",
+    desc: "Plan, schedule, approve, and measure social content in one workspace.",
+    status: "Early Access",
+  },
+  {
+    name: "HelpBaseHQ",
+    desc: "Multi-tenant support content APIs for blog, FAQ, and community.",
+    status: "Beta",
+  },
 ] as const;
 
 const badgeStyles: Record<string, string> = {
-  Live: "text-[#4aab74] border-[#1a3d2a] bg-[#0a1f14]",
+  "Early Access": "text-[#c09050] border-[#3d2a10] bg-[#1f1408]",
   Beta: "text-[#6a8fc5] border-[#1a2a40] bg-[#0a1220]",
-  Building: "text-[#c09050] border-[#3d2a10] bg-[#1f1408]",
-  Always: "text-[#555555] border-[#1e1e1e] bg-[#0d0d0d]",
 };
 
 export function Projects() {
