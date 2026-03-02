@@ -13,7 +13,7 @@ export function Footer() {
           </a>
 
           <div className="flex items-center gap-4 font-[var(--font-inter)] text-[0.82rem] text-[#555555]">
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#e8e8e8]">X</a>
+            <a href="https://x.com/Darren_Builds" target="_blank" rel="noopener noreferrer" className="hover:text-[#e8e8e8]">X</a>
             <span>·</span>
             <a href="https://instagram.com/darren_builds" target="_blank" rel="noopener noreferrer" className="hover:text-[#e8e8e8]">Instagram</a>
             <span>·</span>
