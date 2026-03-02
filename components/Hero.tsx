@@ -41,7 +41,7 @@ export function Hero() {
               }}
             >
               <Image
-                src="/images/darren-hero.jpg"
+                src="/images/darren-hero-v2.jpg"
                 alt="Black and white portrait of Darren"
                 fill
                 priority
